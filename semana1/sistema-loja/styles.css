@@ -19,16 +19,15 @@ header p {
     color: #E0FFFF;
 }
 
-h2 {
+.nome-site {
     background-color: #008B8B;
     color: #E0FFFF;
+}
+
+.nome-site, .titulo-pagina {
     text-align: center;
     margin: 0;
     padding: 40px; 
-}
-
-.titulo {
-    padding: 10px;
 }
 
 .menu {
@@ -41,6 +40,10 @@ h2 {
     margin: auto;
 }
 
+a:link {
+    color: #E0FFFF;
+}
+
 a:visited {
     color: #D1EEEE;
 }
@@ -50,10 +53,37 @@ a:hover {
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #F5F5F5; 
     height: 100vh;
+}
 
+.bg-home {
+    background-image: url(./img/perfume.jpg);
+}
 
+td img {
+    margin: auto;
+    width: 100px;
+    padding: 10;  
+}
+
+form {
+    padding: 80px;
+    text-align: center;
+    margin: auto;
+}
+
+button {
+    border: 50px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #D3D3D3;
+}
+
+table, table td, table th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
 }
 
 footer {
@@ -65,22 +95,20 @@ footer {
     left: 0;
     padding: 0;
     margin: 0;
+    border: 50px;
 }
 
 .redes-sociais{
     margin: auto;
     width: 100px;
-    padding: 10;
-    box-sizing: border-box;
-
-    margin-bottom: 10;
+    padding: 10;   
 }
+
 .redes-sociais img {
     max-width: 30px;  
     display: inline;
     width: 50px;  
-    margin: 20px 0;
-   
+    /* margin: 20px 0; */
 }
 
 footer p {
@@ -89,9 +117,3 @@ footer p {
     color: #E0FFFF;
     text-align: center;
 }
-
-/* text-align: center;
-  margin: 10px;
-  padding: 40px;
-  width: 100%;
-  height: 100%; */
