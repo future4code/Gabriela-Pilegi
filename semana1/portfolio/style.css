@@ -5,49 +5,54 @@
     font-family: 'Roboto', serif;
 }
 
-.cabecalho {
-    background-color: #333;
-    padding: 30px;
-    color: #E6E6E6;
-    text-align: center; 
-    margin: auto; 
-    width: 100%;
+body {
+    background-color: #D8D8D8;
+    /* height: 100vw; */
 }
 
-nav { 
-    background-color: #333; 
-    font-weight: bold; 
-    padding: 0.45em; 
-    top: 0; 
-    width: 100vw;
-    }
+header { 
+    background-color: #333;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    position: fixed;
+}
+
+.nome {
+    color: #E6E6E6;
+    display: inline;
+}
+
+nav {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
 
 nav:hover {
     color: #8A0808;
 }
 
-nav:a { 
-    display: block;
+nav, .nome {
+    padding: 0 4em;
 }
 
-
 ul { 
-    display: flex; 
-    justify-content: space-around;
+    display: flex;
+    gap: 4em;
+    justify-content: flex-end;
 }
 
 li {
-    letter-spacing: 4px; list-style: none;
+    letter-spacing: 4px;
+    list-style: none;
 }
 
-/* .menu-cabecalho {
-    background-color: #333;
-    padding: 5px;
-    color: #E6E6E6;
-    text-align: right;
-    justify-items: center; 
-    margin: auto;
-} */
+li a {
+    text-decoration: none;
+}
 
 a:link {
     color: #E6E6E6;
@@ -61,53 +66,117 @@ a:hover {
     color: #8A0808;
 }
 
-body {
-    background-color: #D8D8D8;
-    height: 100wv;
+h3 {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
 }
 
-h2 {
-    padding: 8px;;
+.gabriela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8em;
+}
+
+.gabriela p {
+    display: flex;
+    padding-top: 2em;
+    width: 24vw;
+}
+
+.portfolio {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    padding-top: 12em;
+}
+
+.img-portfolio img {
+    padding: 5px;
+    margin: 30px;
+    max-width: 300px;
+}
+
+.desc-img-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.desc-img-portfolio a {
+    color: #333;
+}
+
+.sobre {
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16em;
+    gap: 4em;
+}
+
+.quem-sou-eu {
+    margin: 30px;
+}
+
+.minha-trajetoria {
+    margin: 30px;
+}
+
+.contato {
+    padding-top: 16em;
+}
+
+.contato h2 {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-contato{
     text-align: center;
 }
 
+.nome-form, .email-form {
+    padding-bottom: 1em;
+}
+
+.nome-form input, .email-form input, .mensagem-form input {
+    width: 300px;
+}
+
+.mensagem-form {
+    padding-right: 36px;
+}
+
+.mensagem-form input {
+    height: 100px;
+}
+
 .button {
     background-color: #151515;
-    /* margin-left: 20px; */
     width: 800px;
     text-align: center;
+    
 }
 
-.rodape {
-    background-color: #333;
-    color: #E6E6E6;
-    width: 100%;
-    height: 20px;
+footer {
     position: fixed;
     bottom: 0;
-    left: 0;
-    padding: 90px;
-    margin: 0;
-    border: 0px;
-    text-align: center;
+    background-color: #333;
+    width: 100vw;
+    padding: 1em;
 }
 
-.rodape img {
-    max-width: 50px;  
-    display: inline;
-    width: 100vw; 
-    padding: 10px;
-    text-align: center;
-    margin: auto;
+.redes-sociais {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
 }
-
-/* .rodape p {
-    margin: 0;
-    text-align: center;
-    padding: 0px;
-} */
-
