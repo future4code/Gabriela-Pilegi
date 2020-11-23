@@ -25,6 +25,10 @@ h2 {
     /* margin: 20px;   */
 } 
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 input {
     height: 20px;
     width: 500px;
@@ -180,8 +184,3 @@ td img {
     border-bottom: 2px solid black;
 }
 
-background-color: #fadf63;
-    width: 150px;
-    height: 30px;
-    border-radius: 5px;
-    color: black;
