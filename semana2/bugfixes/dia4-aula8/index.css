@@ -91,7 +91,7 @@ div img {
 #container-de-descricao>ol {
     padding: 15px 0px;
     margin: auto; 
-    
+    width: 200px;
 }
 
 
@@ -106,7 +106,6 @@ div img {
     font-size: 60px;
     display: block;
     /* margin: auto; */
-  
 }
 
 
@@ -123,6 +122,9 @@ div:last-child {
 
 table {
     width: 60%;
+    text-align: center;
+    table-layout: fixed;
+    margin: auto;
 }
 
 td button {
