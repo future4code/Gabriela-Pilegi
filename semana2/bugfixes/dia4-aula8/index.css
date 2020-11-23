@@ -174,3 +174,14 @@ td img {
 #back-button:hover {
     background-color: #635a3d
 }
+
+.container-do-search input {
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
