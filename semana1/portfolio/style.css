@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', serif;
+}
+
+body {
+    background-color: #D8D8D8;
+    /* height: 100vw; */
+}
+
+header { 
+    background-color: #333;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    position: fixed;
+}
+
+.nome {
+    color: #E6E6E6;
+    display: inline;
+}
+
+nav {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+nav:hover {
+    color: #8A0808;
+}
+
+nav, .nome {
+    padding: 0 4em;
+}
+
+ul { 
+    display: flex;
+    gap: 4em;
+    justify-content: flex-end;
+}
+
+li {
+    letter-spacing: 4px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #E6E6E6;
+}
+
+a:visited {
+    color: #BDBDBD;
+}
+
+a:hover {
+    color: #8A0808;
+}
+
+h3 {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.gabriela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8em;
+}
+
+.gabriela p {
+    display: flex;
+    padding-top: 2em;
+    width: 24vw;
+}
+
+.portfolio {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    padding-top: 12em;
+}
+
+.img-portfolio img {
+    padding: 5px;
+    margin: 30px;
+    max-width: 300px;
+}
+
+.desc-img-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.desc-img-portfolio a {
+    color: #333;
+}
+
+.sobre {
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16em;
+    gap: 4em;
+}
+
+.quem-sou-eu {
+    margin: 30px;
+}
+
+.minha-trajetoria {
+    margin: 30px;
+}
+
+.contato {
+    padding-top: 16em;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-contato{
+    text-align: center;
+}
+
+.nome-form, .email-form {
+    padding-bottom: 1em;
+}
+
+.nome-form input, .email-form input, .mensagem-form input {
+    width: 300px;
+}
+
+.mensagem-form {
+    padding-right: 36px;
+}
+
+.mensagem-form input {
+    height: 100px;
+}
+
+.button {
+    background-color: #151515;
+    width: 800px;
+    text-align: center;
+    
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #333;
+    width: 100vw;
+    padding: 1em;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
