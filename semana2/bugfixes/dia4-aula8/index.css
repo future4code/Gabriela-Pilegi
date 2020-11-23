@@ -84,11 +84,17 @@ div img {
     background-color: #2274a5;
     color: white;
     padding: 150px;
+    
 }
+
 
 #container-de-descricao>ol {
     padding: 15px 0px;
+    margin: auto; 
+    
 }
+
+
 
 #container-para-comprar {
     background-color: #e7eb90;
@@ -99,7 +105,8 @@ div img {
     padding: 100px 0;
     font-size: 60px;
     display: block;
-    margin: auto;
+    /* margin: auto; */
+  
 }
 
 
