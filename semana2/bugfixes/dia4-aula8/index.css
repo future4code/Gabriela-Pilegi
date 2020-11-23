@@ -19,6 +19,10 @@ h2 {
 
 .container {
     text-align: center;
+    position: relative;
+    /* padding: 20px; */
+    /* align-items: center; */
+    
 } 
 
 input {
@@ -49,6 +53,16 @@ div img {
     border-radius: 5px;
     font-size: 20px;
     color: white;
+    position: absolute;
+    top: 150px;
+    left: 800px;
+    
+
+
+    /* display: block; */
+    
+
+    
 }
 
 .botao-amarelo:hover {
@@ -58,6 +72,7 @@ div img {
 .container {
     height: 500px;
     text-align: center;
+    /* position: relative; */
 }
 
 .icone {
