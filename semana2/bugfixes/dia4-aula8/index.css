@@ -1,0 +1,168 @@
+/** 
+  *
+  *  ESTILOS GERAIS 
+  *
+  **/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    background-color: #fe7e02;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+} 
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    height: 20px;
+    width: 500px;
+}
+
+button:focus {
+    color: white;
+}
+
+img {
+    width: 100px;
+}
+
+div>p:first-child {
+    display: inline;
+}
+
+div img {
+    width: 30px;
+    height: 15px;
+}
+
+.botao-amarelo {
+    background-color: #ffaf43;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.botao-amarelo:hover {
+    background-color: #c44f00;
+}
+
+.container {
+    height: 400px;
+    text-align: center;
+}
+
+.icone {
+    height: 15px;
+    
+}
+
+/** 
+  *
+  *  ESTILOS HOME 
+  *
+  **/
+
+#container-de-descricao {
+    background-color: #2274a5;
+    color: white;
+    padding: 150px;
+    
+}
+
+#container-de-descricao>ol {
+    padding: 15px 0px;
+    margin: auto; 
+    width: 200px;
+}
+
+#container-para-comprar {
+    background-color: #e7eb90;
+}
+
+#container-para-comprar>p {
+    color: #c44f00;
+    padding: 100px 0;
+    font-size: 60px;
+    display: block;
+}
+
+/**
+  *
+  *  ESTILOS COMPRAR 
+  *
+  **/
+
+div:nth-child(2),
+div:last-child {
+    text-align: center;
+}
+
+table {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+td button {
+    background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+}
+
+td button:visited {
+    color: white;
+}
+
+td button:hover {
+    background-color: #FFFF00;
+}
+
+td img {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+}
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+   
+}
+
+#back-button {
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+}
+
+.btn-voltar {
+    text-align: center;
+}
+
+#back-button:hover {
+    background-color: #635a3d
+}
+
+.container-do-search input {
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
