@@ -1,0 +1,140 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: grid;
+}
+
+#main-container {
+    display: grid; 
+    grid-template-columns: repeat(1fr,6);
+    grid-template-rows: repeat(1fr,8);
+    grid-gap: 5px;
+
+}
+
+div {
+    border: 1px solid black;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+}
+
+#first-block {
+    background-color: red;
+    grid-column: 1/6;
+    grid-row: 1;
+    height: 15vh;
+}
+
+.blue-block {
+    background-color: blue;
+    width: 33vw;
+    height: 20vh;
+    grid-column: 1/2;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow-block {
+    background-color: yellow;
+    width: 33vw;
+    height: 20vh;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-block {
+    background-color: green;
+    width: 33vw;
+    height: 20vh;
+    grid-column: 3/4;
+    justify-content: center;
+    align-items: center;
+}
+
+#first-black-block {
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 1/3;
+    
+}
+
+#second-black-block {
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 3/6;
+}
+
+.black-block {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 32vh;
+    width: 50vw;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.white-block {
+    background-color: white;
+    width: 30vw;
+    height: 20vh;
+    grid-row: 8/9;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 420px) {
+
+    #main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr,11);
+        
+    }
+
+    #first-block {
+        /* align-items: flex-start; */
+        height: 20vh;
+ 
+    }
+
+    .blue-block {
+        /* align-items: flex-start; */
+        width: 90vw;;
+    }
+
+    .yellow-block {
+        /* align-items: flex-start; */
+        width: 90vw;;
+    }
+
+    .green-block {
+        /* align-items: flex-start; */
+        width: 90vw;;
+    }
+
+    .black-block {
+        /* align-items: flex-start; */
+        width: 90vw;;
+    }
+    .white-block {
+        /* align-items: flex-start; */
+        width: 90vw;;
+    }
+} 
+
+@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+    /* celulares */
+    }
+    @media screen and (min-device-width : 421px) and (max-device-width : 800px) {
+    /* tablets */
+    }
+    @media screen and (min-device-width : 1200px) {
