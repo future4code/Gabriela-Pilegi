@@ -97,12 +97,12 @@ div {
     #main-container {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1fr,11);
-        
     }
 
     #first-block {
         /* align-items: flex-start; */
-        height: 20vh;
+        /* height: 20vh; */
+        width: 90vw;
  
     }
 
@@ -131,10 +131,10 @@ div {
     }
 } 
 
-@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+/* @media screen and (min-device-width : 320px) and (max-device-width : 420px) {
     /* celulares */
     }
     @media screen and (min-device-width : 421px) and (max-device-width : 800px) {
     /* tablets */
     }
-    @media screen and (min-device-width : 1200px) {
+    @media screen and (min-device-width : 1200px) { */
