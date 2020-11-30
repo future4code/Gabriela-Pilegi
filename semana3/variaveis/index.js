@@ -62,7 +62,7 @@ console.log(arrayComidasPreferidas[3])
 console.log(arrayComidasPreferidas[4])
 
 arrayComidasPreferidas[1] = prompt ("Qual é sua comida preferida?")
-console.log("Essas são minhas comidas prefeirdas: ")
+console.log("Essas são minhas novas comidas prefeirdas: ")
 console.log(arrayComidasPreferidas[0])
 console.log(arrayComidasPreferidas[1])
 console.log(arrayComidasPreferidas[2])
