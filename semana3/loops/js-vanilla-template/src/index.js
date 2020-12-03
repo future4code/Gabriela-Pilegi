@@ -56,3 +56,35 @@
 // }
 
 // console.log("O maior número do array é ",maiorArray,"e o menor é ",menorArray)
+
+
+// DESAFIO 1
+// O resultado impresso no console seria:
+// 0
+// 00
+// 000
+// 0000
+
+//DESAFIO 2
+// console.log("Vamos jogar!")
+// let numero = Number(prompt("Digite o número em que está pensando..."))
+// //let chute = Number(prompt("Hora de chutar... Tente adivinhar o número que seu amigo está pensando"))
+// let chute = Number(prompt("Hora de chutar... Tente adivinhar o número que seu amigo está pensando..."))
+// console.log("Vamos jogar!")
+// if (chute === numero) {
+//     console.log("Parabéns!!! Você acertou!")
+// }
+
+// while (chute > numero || chute < numero) {
+//     let chute = Number(prompt("Hora de chutar... Tente adivinhar o número que seu amigo está pensando..."))
+//     if (chute > numero) {
+//         console.log("O número chutado foi: ", chute)
+//         console.log("Errou. O número escolhido é menor.")
+//     } else if (chute < numero) {
+//         console.log("O número chutado foi: ", chute)
+//         console.log("Errou. O número escolhido é maior.")
+//     } else { 
+//             console.log("Parabéns!!! Você acertou!")
+//     }
+// } 
+
