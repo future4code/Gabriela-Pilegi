@@ -14,7 +14,7 @@
 // const arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
 
 // for (let numeros of arrayOriginal) {
-//    console.log([numeros])
+//    console.log(numeros)
 // }
 
 // EXERCÍCIO B)
@@ -75,7 +75,7 @@
 //     console.log("Parabéns!!! Você acertou!")
 // }
 
-// while (chute > numero || chute < numero) {
+// while (chute !== numero) {
 //     let chute = Number(prompt("Hora de chutar... Tente adivinhar o número que seu amigo está pensando..."))
 //     if (chute > numero) {
 //         console.log("O número chutado foi: ", chute)
@@ -87,4 +87,3 @@
 //             console.log("Parabéns!!! Você acertou!")
 //     }
 // } 
-
