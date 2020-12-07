@@ -108,47 +108,17 @@ let parOuImpar = (array) => {
 console.log(parOuImpar(array[6]))
 
 //c
-// function numerosPares(array) {
-//     let numeroPar = 0 
-//     for (let par of array) {
-//         if (par % 2 === 0) {
-//             numeroPar++;
-//         } 
-//     } 
-//     return numeroPar
-// }
+function numerosPares(array) {
+    let numeroPar = 0 
+    for (let par of array) {
+        if (par % 2 === 0) {
+            numeroPar++;
+        } 
+    } 
+    return numeroPar
+}
 
-// console.log(`Há ${numerosPares(array)} números pares.`)
+console.log(`Há ${numerosPares(array)} números pares.`)
 
 
 //d 
-
-// let qtdNumerosPares = 0
-// function numerosPares(array) {
-//     for (let i = 0; i < array; i++){
-//         parOuImpar()
-//         if (return = true) {
-//             qtdNumerosPares++
-//             console.log("aaaaaaaaaa")
-//         }
-
-//     }
-// }
-
-// console.log(`Há ${parOuImpar(array)} números pares.`)
-
-// var cores = ['vermelho', 'verde', 'azul'];
-// for (var i = 0; i < cores.length; i++) {
-//   console.log(cores[i]);
-// }
-
-const qtdNumerosPares = (array) => {
-    let contador = 0
-    for (let parOuImpar of array) {
-        if (parOuImpar(array)) { 
-            contador++
-        }
-    }
-    return contador
-}
-console.log(qtdNumerosPares(array))
