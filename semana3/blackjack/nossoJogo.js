@@ -12,32 +12,32 @@
  */
 
 
-console.log("Bem-vinde ao jogo Blackjack!")
+// console.log("Bem-vind@ ao jogo Blackjack!")
 
 
-if(confirm("Quer iniciar uma nova rodada?")) {
+// if(confirm("Quer iniciar uma nova rodada?")) {
 
-   let pontuacaoComputador = 0
-   let pontuacaoUsuario = 0
+//    let pontuacaoComputador = 0
+//    let pontuacaoUsuario = 0
     
-   const primeiraCartaComputador = comprarCarta()
-   const segundaCartaComputador = comprarCarta()
-   const primeiraCartaUsuario = comprarCarta()
-   const segundaCartaUsuario = comprarCarta()
+//    const primeiraCartaComputador = comprarCarta()
+//    const segundaCartaComputador = comprarCarta()
+//    const primeiraCartaUsuario = comprarCarta()
+//    const segundaCartaUsuario = comprarCarta()
 
-   pontuacaoComputador = (primeiraCartaComputador.valor + segundaCartaComputador.valor)
-   pontuacaoUsuario = (primeiraCartaUsuario.valor + segundaCartaUsuario.valor)
-   console.log("Usuário - cartas: ", primeiraCartaUsuario.texto, segundaCartaUsuario.texto)
-   console.log("Computador - cartas: ", primeiraCartaComputador.texto, segundaCartaComputador.texto)
-   if (pontuacaoComputador > pontuacaoUsuario) {
-      console.log("O computador venceu!")
-   } else if (pontuacaoUsuario > pontuacaoComputador) {
-      console.log("O usuário venceu!")
-   } else {
-      console.log("Empate!")
-   }
+//    pontuacaoComputador = (primeiraCartaComputador.valor + segundaCartaComputador.valor)
+//    pontuacaoUsuario = (primeiraCartaUsuario.valor + segundaCartaUsuario.valor)
+//    console.log("Usuário - cartas: ", primeiraCartaUsuario.texto, segundaCartaUsuario.texto, "pontuação: ", pontuacaoUsuario)
+//    console.log("Computador - cartas: ", primeiraCartaComputador.texto, segundaCartaComputador.texto,  "pontuação: ", pontuacaoComputador)
+//    if (pontuacaoComputador > pontuacaoUsuario) {
+//       console.log("O computador venceu!")
+//    } else if (pontuacaoUsuario > pontuacaoComputador) {
+//       console.log("O usuário venceu!")
+//    } else {
+//       console.log("Empate!")
+//    }
 
-} else {
-   console.log("O jogo acabou.")
-}
+// } else {
+//    console.log("O jogo acabou.")
+// }
 
