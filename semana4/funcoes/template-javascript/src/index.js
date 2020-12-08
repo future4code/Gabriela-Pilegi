@@ -89,7 +89,7 @@
 
 //EXERCÍCIO 6
 
-const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+// const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
 
 //a
 // function indice(array){
@@ -98,27 +98,40 @@ const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
 // indice(array) 
 
 //b
-let parOuImpar = (array) => {
-    if (array % 2 === 0) {
-        return true
-    } else {
-        return false
-    }
-}
-console.log(parOuImpar(array[6]))
+// let parOuImpar = (array) => {
+//     if (array % 2 === 0) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(parOuImpar(array[1]))
 
 //c
-function numerosPares(array) {
-    let numeroPar = 0 
-    for (let par of array) {
-        if (par % 2 === 0) {
-            numeroPar++;
-        } 
-    } 
-    return numeroPar
-}
+// function contarPares(array) {
+//     let numerosPares = [] 
 
-console.log(`Há ${numerosPares(array)} números pares.`)
+//     for (let numero of array) {
+//         if (numero % 2 === 0) {
+//             numerosPares.push(numero)
+//         } 
+//     } 
+//     return numerosPares.length
+// }
+
+// console.log(`Há ${contarPares(array)} números pares.`)
 
 
 //d 
+
+// function numerosPares(array) {
+//     let nPares = []
+//     for (numero of array) {
+//         if (parOuImpar(numero)){
+//             nPares.push(numero)
+//         }
+        
+//     }
+//        return nPares.length
+// }
+// console.log(`Quantidade de números pares: `, numerosPares(array))
