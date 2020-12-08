@@ -10,4 +10,3 @@ function criarTarefa() {
         campoTarefa.value = ""
     }
 }
-
