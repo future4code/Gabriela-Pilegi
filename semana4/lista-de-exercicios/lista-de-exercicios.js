@@ -35,29 +35,27 @@
 
 // Exercício 3
 // Não funciona, pois falta definir um valor para a quantidadeDeNumerosPares e colocar o incremento para a variável i. Se isso não for feito, pode ocorrer um loop infinito, já que sem o incremento, o i sempre vai ser menor que a quantidade de números pares.
-// const quantidadeDeNumerosPares = 10
+// const quantidadeDeNumerosPares = 5
 // let i = 0
 // while (i <= quantidadeDeNumerosPares) {
 //   console.log(i*2)
 //   i++
 // }
 
-// Exercício 4 (Arrumar!!!)
-// const a = 10
-// const b = 14 
-// const c = 12
-// //const triangulos = ""
-
-// switch (a, b, c) {
-//     case ((a != b) && (b != c)):
-//         console.log("Triângulo escaleno.")
-//         break;
-//     case a === b && b === c:
-//         console.log("Triângulo equilátero.")
-//         break;
-//     default:
-//         console.log("Triângulo isósceles.")
-// }
+// Exercício 4 
+// let a = 10
+// let b = 10
+// let c = 10
+// function triangulos() {
+//     if (a === b && b === c) {
+//       console.log("Triângulo equilátero")
+//     } else if (a === b || b === c || a === c) {
+//       console.log("Triângulo isósceles")
+//     } else {
+//       console.log("Triângulo escanelo")
+//     }
+//   }
+//   triangulos()
 
 
 // Exercício 5
@@ -88,3 +86,5 @@
 //     diferenca = diferenca * -1
 // }
 // console.log("A diferença entre eles é " + diferenca)
+
+
