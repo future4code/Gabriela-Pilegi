@@ -41,3 +41,50 @@
 //   console.log(i*2)
 //   i++
 // }
+
+// Exercício 4 (Arrumar!!!)
+// const a = 10
+// const b = 14 
+// const c = 12
+// //const triangulos = ""
+
+// switch (a, b, c) {
+//     case ((a != b) && (b != c)):
+//         console.log("Triângulo escaleno.")
+//         break;
+//     case a === b && b === c:
+//         console.log("Triângulo equilátero.")
+//         break;
+//     default:
+//         console.log("Triângulo isósceles.")
+// }
+
+
+// Exercício 5
+// const num1 = 20
+// const num2 = 1
+// maior = 0
+// diferenca = 0 
+
+// if (num1 > num2) {
+//     maior = num1
+//     console.log("O maior é: ", num1)
+// } else {
+//     maior = num2
+//     console.log("O maior é: ", num2)
+// } 
+// if (num1 % num2 === 0) {
+//     console.log(num1 + " é divisível por " + num2)
+// } else {
+//     console.log(num1 + " não é divisível por " + num2)
+// }
+// if (num2 % num1 === 0) {
+//     console.log(num2 +" é divisível por " + num1)
+// } else {
+//     console.log(num2 +" não é divisível por " + num1)
+// }
+// diferenca = num1 - num2
+// if (diferenca < 0) {
+//     diferenca = diferenca * -1
+// }
+// console.log("A diferença entre eles é " + diferenca)
