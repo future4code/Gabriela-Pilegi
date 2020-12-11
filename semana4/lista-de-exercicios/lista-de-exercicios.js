@@ -26,3 +26,10 @@
 // let array = [0, 1, 2, 3, 4, 5]
 // console.log(array)
 
+
+// Exercício 2 
+// a) false
+// b) false
+// c) true
+// d) true
+// e) true
