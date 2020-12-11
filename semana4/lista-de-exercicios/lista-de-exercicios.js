@@ -12,6 +12,17 @@
 // Exercício 3
 // O que faz: Programa para exibir a quantidade total de números do array inicial, assim como quantidades e números pares e ímpares em arrays específicas, por meio de loop por for of. 
 // Como faz: Há um array na variável numeros e dois arrays vazios nas variáveis array1 e array2. Na execução do programa, a variável numero é atribuída ao array numeros, representando cada um dos elementos contidos nele. Depois, há uma condicional que diz que se o resto da divisão por 2 do numero do array inicial for 0, ou seja, se for número par, este número será exibido no array1. Caso contrário, o número fará parte do array2, destinado a números ímpares. Após concluir o programa, são impressos no console a quantidade total de números do array inicial e as quantidades de números pares e ímpares.
-// Valor impresso no console: Quantidade total de números: 14; 6; 8
-//                                
+// Valor impresso no console: Quantidade total de números: 14; 6; 8                         
+
+// Exercício 4
+// O que faz:
+// Como faz: 
+// Valor impresso no console:
+
+// Exercícios de Lógica de Programação
+// Exercício 1 
+// Através de um array, laços de repetição como for ou while. No exemplo abaixo, há uma "lista" com números de 0 a 5 englobada por um array. Assim, ao colocar o console.log para essa lista, seus valores serão exibidos no console. 
+
+// let array = [0, 1, 2, 3, 4, 5]
+// console.log(array)
 
