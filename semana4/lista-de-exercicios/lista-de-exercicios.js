@@ -26,10 +26,18 @@
 // let array = [0, 1, 2, 3, 4, 5]
 // console.log(array)
 
-
 // Exercício 2 
 // a) false
 // b) false
 // c) true
 // d) true
 // e) true
+
+// Exercício 3
+// Não funciona, pois falta definir um valor para a quantidadeDeNumerosPares e colocar o incremento para a variável i. Se isso não for feito, pode ocorrer um loop infinito, já que sem o incremento, o i sempre vai ser menor que a quantidade de números pares.
+// const quantidadeDeNumerosPares = 10
+// let i = 0
+// while (i <= quantidadeDeNumerosPares) {
+//   console.log(i*2)
+//   i++
+// }
