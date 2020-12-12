@@ -156,3 +156,21 @@
 
 // console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atrizesEAtores}.`)
 
+// Exercício 4
+// const pessoa = {
+//     nome: "Gabriela",
+//     idade: 26,
+//     email: "gabriela@gabriela.com",
+//     endereço: "Rua 123, número 4"
+// }
+
+// const anonimizarPessoa = (pessoa) => {
+// 	return {
+//         nome: "Anônimo",
+//         idade: pessoa.idade,
+//         email: pessoa.email,
+//         endereço: pessoa.endereço
+// 	}
+// }
+
+// console.log(anonimizarPessoa(pessoa))
