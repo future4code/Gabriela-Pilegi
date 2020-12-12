@@ -43,16 +43,16 @@
 // }
 
 // Exercício 4 
-// let a = 10
-// let b = 10
-// let c = 10
-// function triangulos() {
+// let triangulos = () => {
+//     let a = 12
+//     let b = 11
+//     let c = 10
 //     if (a === b && b === c) {
 //       console.log("Triângulo equilátero")
 //     } else if (a === b || b === c || a === c) {
 //       console.log("Triângulo isósceles")
 //     } else {
-//       console.log("Triângulo escanelo")
+//       console.log("Triângulo escaleno")
 //     }
 //   }
 //   triangulos()
@@ -88,3 +88,43 @@
 // console.log("A diferença entre eles é " + diferenca)
 
 
+// Exercícios de funções
+// Exercício 1 (Não funciona)
+// arrayDeNumeros = [1, 3, 5, 7, 9, 11, 13]
+//  function segundoMaiorMenor(arrayDeNumeros) {
+
+//     let maiorNumero = -Infinity
+//     let segundoMaiorNumero = -Infinity
+//     let menorNumero = Infinity
+//     let segundoMenorNumero = Infinity
+    
+//     for (let numero of arrayDeNumeros) {
+//         if (numero > maiorNumero) {
+//             maiorNumero = numero
+//         }
+
+//         if (numero < menorNumero) {
+//             menorNumero = numero
+//         }
+//     }
+
+//     for (let numero of arrayDeNumeros) {
+//         if (numero > segundoMenorNumero && numero < maiorNumero) {
+//             segundoMaiorNumero = numero
+//         } 
+
+//         if (numero < segundoMenorNumero && numero > menorNumero) {
+//             segundoMaiorNumero = numero
+//         }
+//     }
+
+//     console.log("O segundo maior número é", segundoMaiorNumero)
+//     console.log("O segundo menor número é", segundoMenorNumero)
+// }
+
+// Exercício 2
+// const hello = function () {
+//     alert("Hello Labenu!")
+// }
+
+// hello()
