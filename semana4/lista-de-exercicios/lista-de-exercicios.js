@@ -201,7 +201,7 @@
 
 
 // Exercício 2
-const array = [1, 2, 3, 4, 5, 6]
+// const array = [1, 2, 3, 4, 5, 6]
 
 // Letra a
 // const dobro = array.map((n) => {
@@ -225,3 +225,27 @@ const array = [1, 2, 3, 4, 5, 6]
 // }) 
 
 // console.log(parOuImpar)
+
+// Exercício 3
+
+// const pessoas = [
+// 	{ nome: "Paula", idade: 12, altura: 1.8},
+// 	{ nome: "João", idade: 20, altura: 1.3},
+// 	{ nome: "Pedro", idade: 15, altura: 1.9},
+// 	{ nome: "Luciano", idade: 22, altura: 1.8},
+// 	{ nome: "Artur", idade: 10, altura: 1.2},
+// 	{ nome: "Soter", idade: 70, altura: 1.9}
+// ]
+
+// // Letra a
+// const podeEntrar = pessoas.filter((pessoa) => {
+//    return pessoa.idade >=14 && pessoa.idade <= 60 && pessoa.altura >= 1.5
+// })
+
+// //Letra b
+// const naoPodeEntrar = pessoas.filter((pessoa) => {
+//     return pessoa.idade < 14 || pessoa.idade > 60 || pessoa.altura < 1.5
+// })
+
+// console.log(podeEntrar)
+// console.log(naoPodeEntrar)
