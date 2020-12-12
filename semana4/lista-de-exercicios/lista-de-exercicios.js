@@ -174,3 +174,28 @@
 // }
 
 // console.log(anonimizarPessoa(pessoa))
+
+// Exercícios de Funções de array
+// Exercício 1
+
+// const pessoas = [
+// 	{ nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 } 
+// ]
+
+// const adultos = pessoas.filter ((pessoa) => {
+//     return pessoa.idade >= 20    
+// })
+
+// const criancas = pessoas.filter ((pessoa) => {
+//     return pessoa.idade < 20
+
+// })
+
+// console.log("Adultos: ", adultos)
+// console.log("Crianças e adolescentes: ", criancas)
+
+
+
