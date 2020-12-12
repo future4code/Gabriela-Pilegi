@@ -128,3 +128,7 @@
 // }
 
 // hello()
+
+// Exercícios de objetos
+// 1
+// Um array é utilizado quando precisamos guardar ou acessar mais de uma informação ao mesmo tempo de forma ordenada. Já os objetos permitem que representemos dados mais complexos dentro de uma mesma variável.
