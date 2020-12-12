@@ -136,12 +136,23 @@
 
 // Exercício 2
 
-let criaRetangulo = (lado1, lado2) => {
-    return {
-        largura: lado1,
-        altura: lado2,
-        perimetro: 2 * (lado1+lado2),
-        area: lado1 * lado2
-    }
-}
-console.log(criaRetangulo(10, 20))
+// let criaRetangulo = (lado1, lado2) => {
+//     return {
+//         largura: lado1,
+//         altura: lado2,
+//         perimetro: 2 * (lado1+lado2),
+//         area: lado1 * lado2
+//     }
+// }
+// console.log(criaRetangulo(10, 20))
+
+// Exercício 3
+// const filmeFavorito = {
+//     titulo: 'Laranja Mecânica',
+//     ano: 1971,
+//     diretor: 'Stanley Kubrick',
+//     atrizesEAtores: ["Malcolm McDowell", " Patrick Magee", " Adrienne Corri", " Miriam Karlin"]
+// }
+
+// console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atrizesEAtores}.`)
+
