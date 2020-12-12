@@ -176,8 +176,9 @@
 // console.log(anonimizarPessoa(pessoa))
 
 // Exercícios de Funções de array
-// Exercício 1
 
+// Exercício 1
+// Letra a
 // const pessoas = [
 // 	{ nome: "Pedro", idade: 20 },
 // 	{ nome: "João", idade: 10 },
@@ -185,6 +186,7 @@
 // 	{ nome: "Artur", idade: 89 } 
 // ]
 
+// Letra b
 // const adultos = pessoas.filter ((pessoa) => {
 //     return pessoa.idade >= 20    
 // })
@@ -198,4 +200,28 @@
 // console.log("Crianças e adolescentes: ", criancas)
 
 
+// Exercício 2
+const array = [1, 2, 3, 4, 5, 6]
 
+// Letra a
+// const dobro = array.map((n) => {
+//     return 2*n
+// })
+// console.log(dobro)
+
+// Letra b
+// const triplo = array.map((n) => {
+//     return String(3*n)
+// })
+//     console.log(triplo)
+
+//Letra c
+// const parOuImpar = array.map((numero) => {
+//     if (numero % 2 === 0) {
+//         return `${numero} é par`
+//     } else {
+//         return `${numero} é ímpar`
+//     }
+// }) 
+
+// console.log(parOuImpar)
