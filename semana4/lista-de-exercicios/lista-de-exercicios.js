@@ -130,5 +130,18 @@
 // hello()
 
 // Exercícios de objetos
-// 1
+
+// Exercício 1
 // Um array é utilizado quando precisamos guardar ou acessar mais de uma informação ao mesmo tempo de forma ordenada. Já os objetos permitem que representemos dados mais complexos dentro de uma mesma variável.
+
+// Exercício 2
+
+let criaRetangulo = (lado1, lado2) => {
+    return {
+        largura: lado1,
+        altura: lado2,
+        perimetro: 2 * (lado1+lado2),
+        area: lado1 * lado2
+    }
+}
+console.log(criaRetangulo(10, 20))
