@@ -15,9 +15,9 @@
 // Valor impresso no console: Quantidade total de números: 14; 6; 8                         
 
 // Exercício 4
-// O que faz:
-// Como faz: 
-// Valor impresso no console:
+// O que faz: Progama para mostrar o menor e o maior número do array.
+// Como faz: Há um array com números que variam de -10 a 1590. Abaixo, há duas variáveis (numero1 e numero2) que recebem, respectivamente, os valores de infinito e 0. Depois, a condicional for/of atribuiu que, cada elemento do array numeros é um numero, e para cada um desses elementos, faz uma condicional: se o número do array for menor que a variável numero1(que está valendo infinito), esta variável vai receber o valor daquele elemento. O mesmo acontece para o numero2, mas dessa vez o valor deve ser maior que numero2 (que tem valor igual a 0). Assim, numero1 vai receber o menor valor do array e numero2 vai receber o maior valor destes elementos. 
+// Valor impresso no console: -10 / 1590
 
 // Exercícios de Lógica de Programação
 // Exercício 1 
@@ -89,7 +89,7 @@
 
 
 // Exercícios de funções
-// Exercício 1 (Não funciona)
+// Exercício 1 (###Não funciona###)
 // arrayDeNumeros = [1, 3, 5, 7, 9, 11, 13]
 //  function segundoMaiorMenor(arrayDeNumeros) {
 
