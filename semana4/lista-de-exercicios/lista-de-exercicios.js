@@ -227,7 +227,6 @@
 // console.log(parOuImpar)
 
 // Exercício 3
-
 // const pessoas = [
 // 	{ nome: "Paula", idade: 12, altura: 1.8},
 // 	{ nome: "João", idade: 20, altura: 1.3},
@@ -249,3 +248,34 @@
 
 // console.log(podeEntrar)
 // console.log(naoPodeEntrar)
+
+// Exercício 4
+
+// const consultas = [
+// 	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+// 	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+// 	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+//     { nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+// ]
+
+
+// function mensagensPacientes(consultas) {
+//     let mensagemEnviada = consultas.map((parametros) => {
+//         if(parametros.cancelada === false) {
+//             if(parametros.genero === "feminino") {
+//                 return `Olá, Sra. ${parametros.nome}. Estamos enviando essa mensagem para lembrá-la da sua consulta no dia  ${parametros.dataDaConsulta}. Por favor acuse o recebimento desse email.`
+//             } else {
+//                 return `Olá, Sr. ${parametros.nome}. Estamos enviando essa mensagem para lembrá-lo da sua consulta no dia  ${parametros.dataDaConsulta}. Por favor acuse o recebimento desse email.`
+//             }
+//         } else {
+//             if(parametros.genero === "feminino") {
+//                 return `Olá, Sra. ${parametros.nome}. Infelizmente, sua consulta marcada para o dia ${parametros.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la.`
+//             } else {
+//                 return `Olá, Sr. ${parametros.nome}. Infelizmente, sua consulta marcada para o dia ${parametros.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la.`
+//             }
+//         }
+//     })
+//         return mensagemEnviada
+// }
+
+// console.log(mensagensPacientes(consultas))
