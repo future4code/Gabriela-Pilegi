@@ -21,10 +21,12 @@
 
 // Exercícios de Lógica de Programação
 // Exercício 1 
-// Através de um array, laços de repetição como for ou while. No exemplo abaixo, há uma "lista" com números de 0 a 5 englobada por um array. Assim, ao colocar o console.log para essa lista, seus valores serão exibidos no console. 
+// Podemos iterar sobre arrays utilizando for, while ou map, por exemplo. No exemplo abaixo, há uma "lista" com números de 1 a 5 englobada por um array. Assim, ao utilizá-lo, denominamos numero cada um dos elementos do array e o exibimos no console. 
 
-// let array = [0, 1, 2, 3, 4, 5]
-// console.log(array)
+// let numeros = [1, 2, 3, 4, 5]
+// for(numero of numeros) {
+//     console.log(numero)
+// } 
 
 // Exercício 2 
 // a) false
@@ -37,7 +39,7 @@
 // Não funciona, pois falta definir um valor para a quantidadeDeNumerosPares e colocar o incremento para a variável i. Se isso não for feito, pode ocorrer um loop infinito, já que sem o incremento, o i sempre vai ser menor que a quantidade de números pares.
 // const quantidadeDeNumerosPares = 5
 // let i = 0
-// while (i <= quantidadeDeNumerosPares) {
+// while (i < quantidadeDeNumerosPares) {
 //   console.log(i*2)
 //   i++
 // }
@@ -122,6 +124,38 @@
 //     console.log("O segundo menor número é", segundoMenorNumero)
 // }
 
+
+// const numeros = [1, 3, 5, 7, 9, 11, 13]
+
+// function segundoMaiorMenor(numeros) {
+//     let menorNumero = Infinity
+//     let maiorNumero = -Infinity
+//     let segundoMenor = Infinity
+//     let segundoMaior = -Infinity
+
+//     for (let numero of numeros) {
+//         if (numero < menorNumero) {
+//             menorNumero = numero;
+//         }
+//         if (numero > maiorNumero) {
+//             maiorNumero = numero
+//         }
+//     }
+
+//     for(let numero of numeros) {
+//         if(numero > menorNumero && numero < segundoMenor) {
+//             segundoMenor = numero
+//         }
+//         if(numero < maiorNumero && numero > SegundoMaior) {
+//             segundoMaior = numero
+//         }
+//     }
+
+//     console.log(`Segundo menor: ${segundoMenor}`)
+//     console.log(`Segundo maior: ${segundoMaior}`)
+
+// }
+
 // Exercício 2
 // const hello = function () {
 //     alert("Hello Labenu!")
@@ -178,7 +212,7 @@
 // Exercícios de Funções de array
 
 // Exercício 1
-// Letra a
+
 // const pessoas = [
 // 	{ nome: "Pedro", idade: 20 },
 // 	{ nome: "João", idade: 10 },
@@ -186,11 +220,12 @@
 // 	{ nome: "Artur", idade: 89 } 
 // ]
 
-// Letra b
+// Letra a
 // const adultos = pessoas.filter ((pessoa) => {
 //     return pessoa.idade >= 20    
 // })
 
+// Letra b
 // const criancas = pessoas.filter ((pessoa) => {
 //     return pessoa.idade < 20
 
