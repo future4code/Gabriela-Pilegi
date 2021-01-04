@@ -1,0 +1,25 @@
+  
+.cardPequeno-container {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.274);
+    padding: 20px 10px;
+    height: 100px;    
+    flex-direction: row;
+    color: rgb(2, 2, 53);
+}
+
+.cardPequeno-container > img {
+    width: 50px;
+    
+    border-radius: 50%;
+}
+.cardPequeno-container > h5 {    
+    margin-left: 30px;
+    display: inline;
+}
+
+.cardPequeno-container > p {
+    margin-left: 10px;
+    display: inline;
+}
