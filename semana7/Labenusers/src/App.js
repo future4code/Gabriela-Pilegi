@@ -10,18 +10,23 @@ const Container = styled.div`
   margin-top: 20px;
 `;
 
-function App() {
-  return (
-    <div>
-      <button>Ir para página de lista</button>
-      <Container>
-        
-        <CadastroUsuario></CadastroUsuario>
-        <ListaUsuario></ListaUsuario>
-        
-      </Container>
-    </div>
-  );
-}
+export default class App extends React.Component {
+  state = {
+    page: true
+  };
 
-export default App;
+mudarPage = () => {
+    this.setState({ page: !this.state.page });
+  };
+
+  render(){
+    return(
+      <Container>
+
+        <h1>Labenusers</h1>
+        {this.state.page ? <CadastroUsuario /> : <ListaUsuario />}
+        <button button onClick={this.mudarPage}>Mudar de página</button>
+      </Container>
+    )
+  }
+}

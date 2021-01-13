@@ -25,15 +25,16 @@ class ListaUsuarios extends React.Component{
         }  )
     }
 
-    deletarUsuario = (userId) => {
-        axios.delete(`https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${userId}`, {
+    deletarUsuario = (id) => {
+        axios.delete(`https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${id}`, {
             headers: {
                 Authorization: 'gabriela-pilegi-epps'
             }
         })
-          .then(() => {
-            alert("Usuário deletado com sucesso!")
-            this.listarUsuarios();
+          .then((response) => {
+              console.log(response)
+              alert("Usuário deletado com sucesso!")
+              this.listarUsuarios();
           })
           .catch((error) => {
             alert("Erro ao deletar usuário. ")
@@ -42,18 +43,17 @@ class ListaUsuarios extends React.Component{
       }
 
     render() {
-        const exibirListaUsuarios = this.state.usuarios.map((usuario) => {
-            return(
-                <div>
-                    {usuario.name}
-                    <button onClick={() => this.deletarUsuario(usuario)}>X</button>
-                </div>
-            )
-        })
-        return (
+        return(
             <div>
-                <h1>Lista de usuários cadastrados</h1>
-                <p>{exibirListaUsuarios}</p>
+                <h2>Lista de usuários</h2>
+                {this.state.usuarios.map((usuario) => {
+                    return(
+                        <div>
+                            <p>{usuario.name}</p>
+                            <button onClick={() => {this.deletarUsuario(usuario.id)}}>X</button>
+                        </div>
+                    )
+                })}
             </div>
         )
     }
