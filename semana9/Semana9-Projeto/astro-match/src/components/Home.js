@@ -4,8 +4,9 @@ import GetMatches from './GetMatches'
 import PersonCard from './PersonCard'
 import axios from 'axios'
 
-const Header = styled.div`
+const HomeContainer = styled.div`
   text-align: center;
+  padding: 4px;
 `
 
 function Home() {
@@ -19,15 +20,27 @@ function Home() {
     }
   }
 
+  const resetProfiles = () => {
+    axios
+      .put(
+        "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/gabriela/clear"
+      )
+      .then((response) => {
+          alert("Lista de matches limpa!")
+        // getProfile();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   
 
 
   return(
-    <div>
-      <Header>
-        <h1>AstroMatch</h1>
-        <button onClick={changePage}>Ver matches</button>
-      </Header>
+    <HomeContainer>
+      <button onClick={changePage}>Ver matches</button>
+      <button onClick={() => resetProfiles()}>Resetar matches</button>
       {currentPage === "Home" ? (
         <div>
         <PersonCard></PersonCard>
@@ -39,7 +52,7 @@ function Home() {
         <GetMatches />
       )}
       
-    </div>
+    </HomeContainer>
   )
 }
 export default Home
