@@ -44,9 +44,6 @@ function Home() {
       {currentPage === "Home" ? (
         <div>
         <PersonCard></PersonCard>
-        {/* <p>Tela Home</p>
-        <button>Match</button>
-        <button>X</button> */}
         </div>
       ) : (
         <GetMatches />

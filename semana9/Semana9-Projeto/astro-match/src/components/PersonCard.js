@@ -84,24 +84,9 @@ function PersonCard() {
             })
     }
 
-    // const resetProfiles = () => {
-    //     axios
-    //       .put(
-    //         "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/gabriela/clear"
-    //       )
-    //       .then((response) => {
-    //           alert("Lista de matches limpa!")
-    //         // getProfile();
-    //       })
-    //       .catch((error) => {
-    //         console.log(error);
-    //       });
-    //   };
-
 
     return(
         <Container>
-            {/* <Button onClick={() => resetProfiles(profile.id)}>Resetar matches</Button> */}
             {profile &&
             <Profile>
                 <Photo><img src={profile.photo} /></Photo>
@@ -115,8 +100,6 @@ function PersonCard() {
             <IsMatch>
                 <Button onClick={() => choosePerson(profile.id, false)}>X</Button>
                 <Button onClick={() => choosePerson(profile.id, true)}>♥</Button>
-            
-                
             </IsMatch>
 
         </Container>
