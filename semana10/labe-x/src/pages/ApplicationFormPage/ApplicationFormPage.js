@@ -50,61 +50,7 @@ const ApplicationFormPage = () => {
     })
     return (
         <ApplicationForm>
-            <h1>Application Form Page</h1>
-            <form>
-                <label>Nome: </label>
-                <input 
-                    name="name"
-                    value={form.name}
-                    onChange={handleInputChange}
-                    type="text"
-                    placeholder="Digite seu nome"
-                />
-                <label>Idade: </label>
-                <input 
-                    name="age"
-                    value={form.age}
-                    onChange={handleInputChange}
-                    type="number"
-                    placeholder="Digite sua idade"
-                />
-                <label>Profissão: </label>
-                <input 
-                    name="profession"
-                    value={form.profession}
-                    onChange={handleInputChange}
-                    type="text"
-                    placeholder="Digite sua profissão"
-                />
-                <label>País </label>
-                <input 
-                    name="country"
-                    value={form.country}
-                    onChange={handleInputChange}
-                    type="text"
-                    placeholder="Digite seu país"
-                />
-
-                <label>Destino: </label>
-                <select 
-                    name="tripId"
-                    value={form.tripId}
-                    onChange={handleInputChange}
-                >
-                <option value="">Escolha um destino</option>
-                {getTrips}
-                </select>
-                <label>Mensagem: </label>
-                <input 
-                    name="applicationTExt"
-                    value={form.applicationText}
-                    onChange={handleInputChange}
-                    type="text"
-                    placeholder="Por que você quer ir?"
-                />
-
-                <button>Inscrever-me</button>
-            </form>
+        
         </ApplicationForm>
     )
 }

@@ -7,14 +7,7 @@ const TripDetailsPage = () => {
 
     const [trip, setTrip] = useState({})
     const history= useHistory()
-
-    useEffect(() => {
-        const token = window.localStorage.getItem("token")
-        if (token === null) {
-            history.push("/login")
-        }
-    }, [])
-    
+    useProtect
    
    const getTripDetail = () => {
         axios.get(
