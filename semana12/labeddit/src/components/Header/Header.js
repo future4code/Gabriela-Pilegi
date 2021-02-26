@@ -11,12 +11,10 @@ import { goToFeed, goToLogin } from '../../routes/coordinator';
 import { useHistory } from 'react-router-dom';
 import { useState } from 'react';
 
-
-
-const Header = () => {
-  const history = useHistory()
+const Header = ({rightButtonText, setRightButtonText}) => {
   const token = localStorage.getItem("token")
-  const[rightButtonText, setRightButtonText] = useState(token ? "Logout" : "Login")
+  const history = useHistory()
+  
 
   const logout = () => {
     localStorage.removeItem("token")

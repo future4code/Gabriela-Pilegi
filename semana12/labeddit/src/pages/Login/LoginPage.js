@@ -13,13 +13,13 @@ import { Button, TextField } from "@material-ui/core"
 import LoginForm from "./LoginForm"
 import useUnprotectedPage from "../../hooks/useUnprotectedPage";
 
-const LoginPage = () => {
+const LoginPage = ({setRightButtonText}) => {
   const history = useHistory();
   useUnprotectedPage()
   return (
     <ScreenContainer>
       <LogoImage src={monkey} />
-      <LoginForm />
+      <LoginForm  setRightButtonText={setRightButtonText}/>
       <SignUpButtonContainer>
         <Button
           onClick={() => goToSignUp(history)}

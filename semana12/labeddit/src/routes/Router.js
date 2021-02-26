@@ -8,34 +8,32 @@ import PostPage from '../pages/Post/PostPage'
 import SignUpPage from '../pages/SignUp/SignUpPage'
 
 
-const Router = () => {
+const Router = ({setRightButtonText}) => {
 
   return(
-    <BrowserRouter>
-    <Header />
-      <Switch>
-        <Route exact path={"/login"}>
-          <LoginPage /> 
-        </Route>
+    <Switch>
+      <Route exact path={"/login"}>
+        <LoginPage setRightButtonText={setRightButtonText}/> 
+      </Route>
 
-        <Route exact path={"/cadastro"}>
-          <SignUpPage />
-        </Route>
+    <Route exact path={"/cadastro"}>
+      <SignUpPage setRightButtonText={setRightButtonText}/>
+    </Route>
 
-        <Route exact path={"/"}>
-          <FeedPage />
-        </Route>
+    <Route exact path={"/"}>
+      <FeedPage />
+    </Route>
 
-        <Route exact path={"/post"}>
-          <PostPage />
-        </Route>
+    <Route exact path={"/post"}>
+      <PostPage />
+    </Route>
 
-        <Route>
-          <ErrorPage />
-        </Route>
-      </Switch>
-  
-    </BrowserRouter>
+    <Route>
+      <ErrorPage />
+    </Route>
+  </Switch>
+
+
   )
 }
 
