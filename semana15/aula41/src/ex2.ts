@@ -56,3 +56,16 @@
 // const resultado : object = obterEstatisticas([13, 50, 666])
 // console.log(resultado)
 
+// c)
+// type amostraDeIdades = {
+//     numeros : number[],
+//     obterEstatisticas : (numeros: number[]) => object
+// } 
+
+// const amostraDeDados : amostraDeIdades = {
+//     numeros : [10, 20, 30, 40],
+//     obterEstatisticas : obterEstatisticas
+// }
+
+// const resultado : object = obterEstatisticas(amostraDeDados.numeros) 
+// console.log(resultado)
