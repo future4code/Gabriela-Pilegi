@@ -23,5 +23,5 @@ export const isAdult = (birth: string): boolean => {
     const calcTime: number = (today - birthTimestamp) / 1000
     const age: number = calcTime/(60 * 60 * 24 * 365)
 
-    return age > 18
+    return age >= 18
 }
