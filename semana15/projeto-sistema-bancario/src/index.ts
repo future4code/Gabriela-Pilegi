@@ -1,56 +1,59 @@
-import express, { Request, Response } from "express";
+import express, { Express, Request, Response } from "express";
 import cors from "cors";
 import { AddressInfo } from "net";
-import { getTimestamp, isAdult, findCpf } from './date'
-import { userAccount, users } from "./users";
+import {  accounts } from "./accounts"
 
-const app = express();
+const app: Express = express();
 app.use(express.json());
 app.use(cors());
 
-app.post("/account/create", (req: Request, res: Response) => {
-    let errorCode: number = 400
+app.post("/users/create", (req: Request, res: Response) => {
+
     try {
-        if (!req.body.name || !req.body.cpf || !req.body.birth) {
-            errorCode = 422
-            throw new Error("Preencha os campos corretamente.")
+
+        const { name, CPF, dateOfBirthAsString } = req.body
+
+        const [day, month, year] = dateOfBirthAsString.split("/")
+
+        const dateOfBirth: Date = new Date(`${year}-${month}-${day}`)
+
+        const ageInMilisseconds: number = Date.now() - dateOfBirth.getTime( )
+
+        const ageInYears:  number = ageInMilisseconds / 1000 / 60 / 60 / 24 / 365
+
+        if (ageInYears < 18) {
+            res.statusCode = 406
+            throw new Error("Idade deve ser maior que 18 anos.cd ")
         }
 
-        if (!getTimestamp(req.body.birth)) {
-            errorCode = 422
-            throw new Error("Data inválida. (Preencha com DD/MM/YYYY)")
-        }
-
-        const openAccount: boolean = isAdult(req.body.birth)
-
-        if (!openAccount) {
-            errorCode = 401
-            throw new Error("É necessário ter pelo menos 18 anos para criar uma conta.")
-        }
-
-        const validateCpf: userAccount  | undefined = findCpf(req.body.cpf)
- 
-        if (validateCpf) {
-            errorCode = 409
-            throw new Error("Não é possível criar uma nova conta com um CPF já existente.")
-        }
-
-        const newAccount: userAccount = {
-            name: req.body.name,
-            cpf: req.body.cpf,
-            birth: req.body.birth,
+        accounts.push({
+            name,
+            CPF,
+            dateOfBirth,
             balance: 0,
-            transaction: []
-        }
+            statement: []
+        })
 
-        users.push(newAccount)
-
-        res.status(201).send({ message: "Conta criada com sucesso!" })
-
+        res.status(201).send("Conta criada com sucesso!")
+        
     } catch (error) {
-        res.status(errorCode).send({ message: error.message })
+        console.log(error)
+        res.send(error.message)
     }
 })
+
+app.get("/users/all", (req: Request, res: Response) => {
+    try {
+        if (!accounts.length) {
+            res.statusCode = 404
+            throw new Error("Nenhuma conta encontrada.")
+        }
+        res.status(200).send(accounts)
+    } catch (error) {
+        res.status(400).send(error.message)
+    }
+})
+
 
 const server = app.listen(process.env.PORT || 3003, () => {
     if (server) {
