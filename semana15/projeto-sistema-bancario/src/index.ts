@@ -23,7 +23,7 @@ app.post("/users/create", (req: Request, res: Response) => {
 
         if (ageInYears < 18) {
             res.statusCode = 406
-            throw new Error("Idade deve ser maior que 18 anos.cd ")
+            throw new Error("Idade deve ser maior que 18 anos. ")
         }
 
         accounts.push({
