@@ -13,8 +13,9 @@ const putUser = async (
 
     try {
         await connection.raw (
-            `INSERT INTO ToDoListUser (name, nickname, email)
+            `INSERT INTO ToDoListUser (id, name, nickname, email)
             VALUES (
+                "${req.body.id}",
                 "${req.body.name}",
                 "${req.body.nickname}",
                 "${req.body.email}"
