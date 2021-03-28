@@ -15,6 +15,8 @@ export default async function editUser (
             .send({
                 message: "Os campos devem ser preenchidos."
             })
+
+            return
         }
 
         if (!req.body.name && !req.body.nickname && !req.body.email) {
