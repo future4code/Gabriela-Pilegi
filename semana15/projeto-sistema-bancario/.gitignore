@@ -1,0 +1,3 @@
+# para estas pastas não subirem para o github
+node_modules
+build
