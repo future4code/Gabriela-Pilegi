@@ -1,48 +1,58 @@
 import { Request, Response } from 'express';
 import { insertUser } from '../data/insertUser';
 import generateId from '../services/idGenerator';
-import { AuthenticationData } from '../services/authentication'
-import { User } from '../types'
+import { AuthenticationData, generateToken } from '../services/authentication'
+import { user } from '../types'
+import connection from '../connection'
 
 export default async function createUser (
     req: Request,
     res: Response
 ) : Promise<void> {
 
-    let errorCode: number = 400
+    let errorCode: number = 400;
 
     try {
-        const { email, password } = req.body;
 
-        if ( !email || !password ) {
-            errorCode = 406;
-            throw new Error('Informe e-mail e senha.');
+        const { name, nickname, email, password } = req.body
+  
+        if (!name || !nickname || !email || !password) {
+            errorCode
+            throw new Error("Preencha os campos 'name','nickname', 'password' e 'email'.")
+        }
+  
+        const [user] = await connection('to_do_list_users')
+           .where({ email })
+  
+        if (user) {
+            throw new Error('E-mail já cadastrado.')
         }
 
         if ( !email.includes("@") ) {
-            errorCode = 406;
-            throw new Error('Digite um e-mail válido.');
-        }
+            throw new Error("Digite um endereço de e-mail válido")
+        };
 
         if ( password.length < 6 ) {
-            errorCode = 406;
-            throw new Error('A senha deve conter no mínimo 6 caracteres.');
+            throw new Error("A senha deve conter no mínimo 6 caracteres.")
+        };
+  
+        const id: string = generateId()
+  
+        const newUser: user = { id, name, nickname, email, password }
+  
+        await connection('to_do_list_users')
+           .insert(newUser)
+  
+        const token: string = generateToken({ id })
+  
+        res.status(201).send({ newUser, token })
+  
+     } catch (error) {
+  
+        if (res.statusCode === 200) {
+           res.status(500).send({ message: "Internal server error" })
+        } else {
+           res.send({ message: error.message })
         }
-
-        const newUser: User = {
-            id: generateId(),
-            email: email,
-            password: password
-        }
-
-        await insertUser(newUser)
-
-        const authData: AuthenticationData = {id: newUser.id}
-        const token = generateId(authData)
-
-        res.status(200).send({token})
-
-    } catch (error) {
-        res.status(errorCode).send(error.sqlMessage || error.message );
-    }
-}
+     }
+  }

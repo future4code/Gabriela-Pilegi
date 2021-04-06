@@ -1,4 +1,4 @@
-import * as jwt from "jsonwebtoken";
+import * as jwt from "jsonwebtoken"
 
 
 export type AuthenticationData = {
@@ -8,14 +8,20 @@ export type AuthenticationData = {
 
  export const generateToken = (input: AuthenticationData): string => {
     const token = jwt.sign(
-      {
-        id: input.id,
-      },
+      { id: input.id },
       process.env.JWT_KEY as string,
       {
         expiresIn
       }
-    );
+    )
     return token;
+}
+
+
+export const getTokenData = (token: string): AuthenticationData => {
+  return jwt.verify(
+    token, 
+    process.env.JWT_KEY as string
+  ) as AuthenticationData
 }
 
