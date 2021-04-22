@@ -31,7 +31,7 @@ describe("Testing getUserById.", () => {
         };
     });
 
-    test("Should return User", async () => {
+    test("Should return user", async () => {
         const userMock = new User(
             "id",
             "Test user",
