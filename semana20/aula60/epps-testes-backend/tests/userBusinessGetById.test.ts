@@ -11,16 +11,16 @@ describe("Testing getUserById.", () => {
     let tokenGenerator = { } as TokenGenerator;
 
     test("User not found error.", async () => {
-        expect.assertions(3);
+        expect.assertions(2)
 
-        userDatabase = { getUserById: jest.fn(async (id: string) => undefined) } as any;
+        userDatabase = { getUserById: jest.fn(async (id: string) => undefined) } as any
 
         const userBusiness = new UserBusiness(
             idGenerator,
             hashGenerator,
             userDatabase,
             tokenGenerator
-        );
+        )
 
         try {
             await userBusiness.getUserById("id");
@@ -28,35 +28,7 @@ describe("Testing getUserById.", () => {
             expect(error.statusCode).toBe(404);
             expect(error.message).toEqual("User not found");
             expect(userDatabase.getUserById).toHaveBeenCalled();
-        };
-    });
+        }
+    })
 
-    test("Should return user", async () => {
-        const userMock = new User(
-            "id",
-            "Test user",
-            "testuser@gmail.com",
-            "userpassword",
-            stringToUserRole("ADMIN")
-        ); 
-
-        userDatabase = { getUserById: jest.fn(async (id: string) => userMock) } as any;
-
-        const userBusiness = new UserBusiness(
-            idGenerator,
-            hashGenerator,
-            userDatabase,
-            tokenGenerator
-        );
-
-        const output = await userBusiness.getUserById("id");
- 
-        expect(userDatabase.getUserById).toHaveBeenCalledWith("id");
-        expect(output).toEqual({
-            id: "id",
-            name: "Test user",
-            email:"testuser@gmail.com",
-            role: USER_ROLES.ADMIN
-        });
-    });
-});
+})
